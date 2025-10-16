@@ -117,5 +117,3 @@ function y() {
 
 # Z
 eval "$(zoxide init zsh)"
-# Added by Windsurf
-export PATH="/Users/pskobelev/.codeium/windsurf/bin:$PATH"
