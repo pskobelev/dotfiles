@@ -185,3 +185,10 @@ run = ['layout floating']
 [[on-window-detected]]
 if.app-id = 'com.apple.ActivityMonitor'
 run = ['layout floating']
+
+#HomeAssistant
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari.WebApp.084AE659-8D67-4E79-8CA8-90BF1A514842'
+run = ['layout floating']
+
+
