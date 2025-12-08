@@ -57,11 +57,11 @@ automatically-unhide-macos-hidden-apps = false
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
     outer.top =         [{monitor.'^built-in retina display$' = 0 }, 0]
-    outer.bottom =      [{monitor.'^built-in retina display$' = 5 }, 5]
-    inner.horizontal = 5
-    inner.vertical =   5
-    outer.left =       5
-    outer.right =      5
+    outer.bottom =      [{monitor.'LG Ultra HD' = 10 }, 3]
+    inner.horizontal = 3
+    inner.vertical =   3
+    outer.left =       3
+    outer.right =      3
     # outer.bottom =     5
     # outer.top =        5
 
@@ -69,6 +69,15 @@ automatically-unhide-macos-hidden-apps = false
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
 # Fallback value (if you omit the key): mode.main.binding = {}
+
+
+[workspace-to-monitor-force-assignment]
+    1 = "main"
+    Q = "main"
+    W = "main"
+    E = "main"
+    2 = "secondary"
+
 [mode.main.binding]
 
     # All possible keys:
@@ -120,7 +129,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     alt-1 = 'workspace 1'
-#    alt-2 = 'workspace 2'
+    alt-2 = 'workspace 2'
 #    alt-3 = 'workspace 3'
     alt-q = 'workspace Q'
     alt-w = 'workspace W'
@@ -129,7 +138,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
-#    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-2 = 'move-node-to-workspace 2'
 #    alt-shift-3 = 'move-node-to-workspace 3'
     alt-shift-q = 'move-node-to-workspace Q'
     alt-shift-w = 'move-node-to-workspace W'
@@ -142,6 +151,8 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
+
+
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
