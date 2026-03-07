@@ -9,7 +9,7 @@ start-at-login = true
 after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+    # 'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
 
 # Notify Sketchybar about workspace change
@@ -83,7 +83,7 @@ outer.right =      5
 #1 = "main"
 Q = "secondary"
 W = "secondary"
-E = "main"
+E = "secondary"
 1 = "main"
 2 = "main"
 3 = "main"
@@ -224,5 +224,3 @@ run = ['layout floating']
 [[on-window-detected]]
 if.app-id = 'com.apple.reminders'
 run = ['layout floating']
-
-
